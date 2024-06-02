@@ -1,5 +1,6 @@
 import os
 import requests
+import shutil
 import subprocess
 from tqdm import tqdm
 
@@ -24,7 +25,7 @@ def download_file(file_url, file_name):
     block_size = 8192
 
     with open(file_name, "wb") as file, tqdm(
-        desc=f"./data/{file_name}",
+        desc=f"{file_name}",
         total=total_size,
         unit="iB",
         unit_scale=True,
@@ -40,6 +41,15 @@ def create_directories():
     os.makedirs("./data/text", exist_ok=True)
     os.makedirs("./data/image", exist_ok=True)
     os.makedirs("./data/audio", exist_ok=True)
+
+
+def combine_parts(base_name, parts):
+    with open(base_name, "wb") as combined:
+        for part in parts:
+            with open(part, "rb") as part_file:
+                shutil.copyfileobj(part_file, combined)
+    print(f"Combined parts into {base_name}")
+    return base_name
 
 
 def extract_file_to_correct_directory(file_name):
@@ -66,10 +76,32 @@ files_list = get_deposition_files(DEPOSIT_ID)
 
 create_directories()
 
+downloaded_files = []
+
+# Download all files
 for file_info in files_list:
     file_name = file_info["key"]
     file_url = file_info["links"]["self"]
     download_file(file_url, file_name)
-    extract_file_to_correct_directory(file_name)
+    downloaded_files.append(file_name)
+
+# Group files by base name for combining parts
+base_files = {}
+for file_name in downloaded_files:
+    if "_part_" in file_name:
+        base_name = file_name.split("_part_")[0]
+        if base_name not in base_files:
+            base_files[base_name] = []
+        base_files[base_name].append(file_name)
+
+# Combine parts and extract
+for base_name, parts in base_files.items():
+    combined_file = combine_parts(base_name, parts)
+    extract_file_to_correct_directory(combined_file)
+
+# Extract single-part files
+for file_name in downloaded_files:
+    if "_part_" not in file_name:
+        extract_file_to_correct_directory(file_name)
 
 print("All files downloaded and extracted to correct directories successfully.")
