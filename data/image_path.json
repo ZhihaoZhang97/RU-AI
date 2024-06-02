@@ -1,0 +1,23 @@
+{
+    "flickr8k": {
+        "sd-1.5-hyper": "stable-diffusion-images-v6-0",
+        "sd-1.5": "stable-diffusion-images-v1-5",
+        "sd-xl": "stable-diffusion-images-xl-v3-0",
+        "absolutereality": "stable-diffusion-images-absolutereality",
+        "epicrealism": "stable-diffusion-images-epicrealism"
+    },
+    "coco": {
+        "sd-1.5-hyper": "stable-diffusion-images-v6-0-remove-black",
+        "sd-1.5": "stable-diffusion-images-v1-5",
+        "sd-xl": "stable-diffusion-images-xl-v3-0-remove-black",
+        "absolutereality": "stable-diffusion-images-absolutereality-remove-black",
+        "epicrealism": "stable-diffusion-images-epicrealism-remove-black"
+    },
+    "place": {
+        "sd-1.5-hyper": "stable-diffusion-images-v6-0-remove-black",
+        "sd-1.5": "stable-diffusion-images-v1-5",
+        "sd-xl": "stable-diffusion-images-xl-v3-0-remove-black",
+        "absolutereality": "stable-diffusion-images-absolutereality-remove-black",
+        "epicrealism": "stable-diffusion-images-epicrealism-remove-black"
+    }
+}
