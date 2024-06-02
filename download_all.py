@@ -77,24 +77,14 @@ files_list = get_deposition_files(DEPOSIT_ID)
 
 create_directories()
 
-downloaded_files = [
-    "audio_place.tar.xz_part_0",
-    "audio_place.tar.xz_part_1",
-    "audio_place.tar.xz_part_2",
-    "audio_place.tar.xz_part_3",
-    "audio_place.tar.xz_part_4",
-    "audio_place.tar.xz_part_5",
-    "audio_place.tar.xz_part_6",
-    "audio_place.tar.xz_part_7",
-    "audio_place.tar.xz_part_8",
-]
+downloaded_files = []
 
 # Download all files
-# for file_info in files_list:
-#     file_name = file_info["key"]
-#     file_url = file_info["links"]["self"]
-#     download_file(file_url, file_name)
-#     downloaded_files.append(file_name)
+for file_info in files_list:
+    file_name = file_info["key"]
+    file_url = file_info["links"]["self"]
+    download_file(file_url, file_name)
+    downloaded_files.append(file_name)
 
 # Group files by base name for combining parts
 base_files = {}
