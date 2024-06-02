@@ -44,8 +44,9 @@ def create_directories():
 
 
 def combine_parts(base_name, parts):
+    parts_sorted = sorted(parts, key=lambda x: int(x.split("_part_")[-1]))
     with open(base_name, "wb") as combined:
-        for part in parts:
+        for part in parts_sorted:
             with open(part, "rb") as part_file:
                 shutil.copyfileobj(part_file, combined)
     print(f"Combined parts into {base_name}")
@@ -76,14 +77,24 @@ files_list = get_deposition_files(DEPOSIT_ID)
 
 create_directories()
 
-downloaded_files = []
+downloaded_files = [
+    "audio_place.tar.xz_part_0",
+    "audio_place.tar.xz_part_1",
+    "audio_place.tar.xz_part_2",
+    "audio_place.tar.xz_part_3",
+    "audio_place.tar.xz_part_4",
+    "audio_place.tar.xz_part_5",
+    "audio_place.tar.xz_part_6",
+    "audio_place.tar.xz_part_7",
+    "audio_place.tar.xz_part_8",
+]
 
 # Download all files
-for file_info in files_list:
-    file_name = file_info["key"]
-    file_url = file_info["links"]["self"]
-    download_file(file_url, file_name)
-    downloaded_files.append(file_name)
+# for file_info in files_list:
+#     file_name = file_info["key"]
+#     file_url = file_info["links"]["self"]
+#     download_file(file_url, file_name)
+#     downloaded_files.append(file_name)
 
 # Group files by base name for combining parts
 base_files = {}
