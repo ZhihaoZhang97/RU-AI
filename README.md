@@ -14,7 +14,7 @@ The dataset requires at least 200Gb of disk space to be fully downloaded.
 
 The model inference requires a Nvidia GPU with at least 16GB of vRAM to run. We recommend to have **NVIDIA RTX 3090, 24GB or anything above** to run this project.
 
-### Dependencies
+## Dependencies
 We highly recommend to have packages installed within a **virtual environment** such as **[conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)** or **[venv](https://docs.python.org/3/library/venv.html)**.
 
 Clone the project:
