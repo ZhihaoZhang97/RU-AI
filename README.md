@@ -54,7 +54,7 @@ It will take a while for downloading, the actual speed depends on your internet.
 python ./download_all.py
 ```
 
- Then go to ```./data``` to manually check the data after downloading.
+You can also go to ```./data``` to manually check the data after downloading.
 
 
 
