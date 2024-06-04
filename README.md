@@ -10,7 +10,7 @@ The dataset is publicly avaliable at zenodo:
 https://zenodo.org/records/11406538
 ```
 
-The dataset requires at least 500Gb of disk space to be fully downloaded. 
+The dataset requires at least 500GB of disk space to be fully downloaded. 
 
 The model inference requires a Nvidia GPU with at least 16GB of vRAM to run. We recommend to have **NVIDIA RTX 3090, 24GB or anything above** to run this project.
 
@@ -40,11 +40,11 @@ pip3 install -r requirements.txt
 ## Data Sample
 We provide a quick tutorial on how to download and inspect the dataset on the ```data-example.ipynb``` notebook. 
 
-You can also directly run the follwoing code to download smaple data sourced from flickr8k:
+You can also directly run the follwoing code to download smaple data sourced for flickr8k:
 ```bash
 python ./download_flickr.py
 ```
-You can also download all the data sourced from by running thw following code:
+You can also download all the data by running thw following code.
 
 Please note the whole dataset **is over 157GB** in compression and could take **up to 500GB** after decompression. 
 
@@ -53,9 +53,60 @@ It will take a while for downloading, the actual speed depends on your internet.
 python ./download_all.py
 ```
 
- You can also go to ```./data``` to manually check the data after downloading.
+You can also go to ```./data``` to manually check the data after downloading.
 
+Here is the directory tree after downloading all the data:
 
+```
+├── audio
+│   ├── coco
+│   │   ├── efficientspeech
+│   │   ├── real
+│   │   ├── styletts2
+│   │   ├── vits
+│   │   ├── xtts2
+│   │   └── yourtts
+│   ├── flickr8k
+│   │   ├── efficientspeech
+│   │   ├── real
+│   │   ├── styletts2
+│   │   ├── vits
+│   │   ├── xtts2
+│   │   └── yourtts
+│   └── place
+│       ├── efficientspeech
+│       ├── real
+│       ├── styletts2
+│       ├── vits
+│       ├── xtts2
+│       └── yourtts
+├── image
+│   ├── coco
+│   │   ├── real
+│   │   ├── stable-diffusion-images-absolutereality-remove-black
+│   │   ├── stable-diffusion-images-epicrealism-remove-black
+│   │   ├── stable-diffusion-images-v1-5
+│   │   ├── stable-diffusion-images-v6-0-remove-black
+│   │   └── stable-diffusion-images-xl-v3-0-remove-black
+│   ├── flickr8k
+│   │   ├── real
+│   │   ├── stable-diffusion-images-absolutereality
+│   │   ├── stable-diffusion-images-epicrealism
+│   │   ├── stable-diffusion-images-v1-5
+│   │   ├── stable-diffusion-images-v6-0
+│   │   └── stable-diffusion-images-xl-v3-0
+│   └── place
+│       ├── real
+│       ├── stable-diffusion-images-absolutereality-remove-black
+│       ├── stable-diffusion-images-epicrealism-remove-black
+│       ├── stable-diffusion-images-v1-5
+│       ├── stable-diffusion-images-v6-0-remove-black
+│       └── stable-diffusion-images-xl-v3-0-remove-black
+└── text
+    ├── coco
+    ├── flickr8k
+    └── place
+```
 
 ## Model Inference
 
