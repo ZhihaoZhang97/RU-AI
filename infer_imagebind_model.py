@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 import torch
 
-from ImageBind.imagebind import data
+from imagebind import data
 
 ModalityType = SimpleNamespace(
     VISION="vision",
