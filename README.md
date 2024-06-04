@@ -10,7 +10,7 @@ The dataset is publicly avaliable at zenodo:
 https://zenodo.org/records/11406538
 ```
 
-The dataset requires at least 200Gb of disk space to be fully downloaded. 
+The dataset requires at least 500Gb of disk space to be fully downloaded. 
 
 The model inference requires a Nvidia GPU with at least 16GB of vRAM to run. We recommend to have **NVIDIA RTX 3090, 24GB or anything above** to run this project.
 
