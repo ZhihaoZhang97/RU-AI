@@ -62,6 +62,7 @@ python ./download_all.py
 
 ## Reference
 We are appreciated the open-source community for the datasets and the models. 
+
 [Microsoft COCO: Common Objects in Context](https://arxiv.org/abs/1405.0312)
 
 [Framing Image Description as a Ranking Task: Data, Models and Evaluation Metrics ](https://www.jair.org/index.php/jair/article/view/10833)
