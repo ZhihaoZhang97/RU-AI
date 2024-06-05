@@ -15,14 +15,14 @@ if __name__ == '__main__':
 
     modality_transform = {c: transform_dict[c](model.modality_config[c]) for c in model.clip_type.keys()}
 
-    image = ['/path/to/image/data']
-    audio = ['/path/to/audio/data']
-    language  = ["Sample Text String"]
+    image_data_paths = ['/path/to/image/data']
+    audio_data_paths = ['/path/to/audio/data']
+    text_data = ["Sample Text String"]
 
     inputs = {
-        'image': to_device(modality_transform['image'](image), device),
-        'audio': to_device(modality_transform['audio'](audio), device),
-        'language': to_device(tokenizer(language, max_length=77, padding='max_length',
+        'image': to_device(modality_transform['image'](image_data_paths), device),
+        'audio': to_device(modality_transform['audio'](audio_data_paths), device),
+        'language': to_device(tokenizer(text_data, max_length=77, padding='max_length',
                                              truncation=True, return_tensors='pt'), device)
     }
 

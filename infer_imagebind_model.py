@@ -21,14 +21,14 @@ if __name__ == '__main__':
     model = model.to(device)
     model.eval()
 
-    image = ['/path/to/image/data']
-    audio = ['/path/to/audio/data']
-    text = ["Sample Text String"]
+    image_data_paths = ['/path/to/image/data']
+    audio_data_paths = ['/path/to/audio/data']
+    text_data = ["Sample Text String"]
 
     inputs = {
-        ModalityType.VISION: data.load_and_transform_vision_data(image, device),
-        ModalityType.AUDIO: data.load_and_transform_audio_data(audio, device),
-        ModalityType.TEXT: data.load_and_transform_text(text, device)
+        ModalityType.VISION: data.load_and_transform_vision_data(image_data_paths, device),
+        ModalityType.AUDIO: data.load_and_transform_audio_data(audio_data_paths, device),
+        ModalityType.TEXT: data.load_and_transform_text(text_data, device)
     }
 
     with torch.no_grad():

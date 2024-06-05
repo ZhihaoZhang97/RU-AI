@@ -60,4 +60,14 @@ You can also go to ```./data``` to manually check the data after downloading.
 
 ## Model Inference
 
+Before model inference, replace image_data_paths, audio_data_paths, text_data in the `infer_imagebind_model.py` and `infer_languagebind_model.py` files with real data / data paths
 
+imagebind based model
+```bash
+python infer_imagebind_model.py
+```
+
+languagebind based model
+```bash
+python infer_languagebind_model.py
+```
