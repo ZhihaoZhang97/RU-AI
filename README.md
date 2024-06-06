@@ -16,6 +16,11 @@ The model inference requires a Nvidia GPU with at least 16GB of vRAM to run. We 
 
 We highly recommend to have this package installed within a **virtual environment** such as **[conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)** or **[venv](https://docs.python.org/3/library/venv.html)**.
 
+Environmental requirement:
+- Python >= 3.8
+- Pytorch >= 1.13.1
+- CUDA Version >= 11.6
+
 Clone the project:
 ```bash
 git clone https://github.com/ZhihaoZhang97/RU-AI.git
