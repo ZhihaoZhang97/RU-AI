@@ -4,6 +4,9 @@ import torch
 
 from imagebind import data
 
+# Downlaod model from huggingface
+snapshot_download(repo_id="zzha6204/imagebind-mlp", local_dir_use_symlinks=False, local_dir="./checkpoints", cache_dir="./models")
+
 ModalityType = SimpleNamespace(
     VISION="vision",
     TEXT="text",
