@@ -2,6 +2,9 @@ import torch
 
 from languagebind import to_device, transform_dict, LanguageBindImageTokenizer
 
+# Downlaod model from huggingface
+snapshot_download(repo_id="zzha6204/languagebind-mlp", local_dir_use_symlinks=False, local_dir="./lb_checkpoints", cache_dir="./models")
+
 pretrained_ckpt = f'lb203/LanguageBind_Image'
 tokenizer = LanguageBindImageTokenizer.from_pretrained(pretrained_ckpt, cache_dir='tokenizer_cache_dir')
 
@@ -9,7 +12,7 @@ if __name__ == '__main__':
     device = 'cuda:0'
     device = torch.device(device)
 
-    model = torch.load("checkpoints/languagebind_model.pt")
+    model = torch.load("lb_checkpoints/languagebind_model.pt")
     model = model.to(device)
     model.eval()
 
