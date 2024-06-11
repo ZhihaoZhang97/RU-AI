@@ -2,9 +2,7 @@
 
 # RU-AI
 
-This is the official repo for paper: RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection
-
-Our pre-print paper is avaliable at: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
+This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
 ## Requirement
 The dataset is publicly avaliable at zenodo: 
