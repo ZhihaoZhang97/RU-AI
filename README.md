@@ -146,3 +146,15 @@ We are appreciated the open-source community for the datasets and the models.
 
 [ImageBind: One Embedding Space To Bind Them All](https://openaccess.thecvf.com/content/CVPR2023/papers/Girdhar_ImageBind_One_Embedding_Space_To_Bind_Them_All_CVPR_2023_paper.pdf)
 
+## Citation
+If found our dataset or research useful, please cite:
+```text
+@misc{huang2024ruai,
+      title={RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection}, 
+      author={Liting Huang and Zhihao Zhang and Yiran Zhang and Xiyue Zhou and Shoujin Wang},
+      year={2024},
+      eprint={2406.04906},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
