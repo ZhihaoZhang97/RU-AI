@@ -49,7 +49,7 @@ You can also directly run the follwoing code to download smaple data sourced for
 ```bash
 python ./download_flickr.py
 ```
-You can also download all the data by running thw following code.
+You can also download all the data by running the following code.
 
 Please note the whole dataset **is over 157GB** in compression and could take **up to 500GB** after decompression. 
 
