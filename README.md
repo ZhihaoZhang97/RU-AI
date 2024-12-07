@@ -4,6 +4,26 @@
 
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
+## Dataset Comparison
+| **Dataset**                | **Modality**         | **Content**       | **Real/Human** | **Machine Generated Content** | **Task**                            |
+|----------------------------|----------------------|-------------------|---------------|-------------------------------|-------------------------------------|
+| M4                         | Text                | General           | 10,019,311    | 122,481                       | Multi-lingual AI Text Detection     |
+| DeepfakeTextDetect         | Text                | General           | 447,674       | 447,674                       | Generalised AI Text Detection       |
+| ArguGPT                    | Text                | Essay             | 4,115         | 4,038                         | Language Learner-AI Text Detection  |
+| HC3                        | Text                | Question Answers  | 80,805        | 44,425                        | AI Answer Detection                 |
+| CNNSpot                    | Image               | General           | 362,000       | 362,000                       | AI Image Detection                  |
+| DE-FAKE                    | Image               | General           | 20,000        | 191,946                       | AI Image Detection                  |
+| GenImage                   | Image               | General           | 1,331,167     | 1,350,000                     | AI Image Detection                  |
+| WaveFake                   | Voice               | General           | 13,600        | 104,885                       | Fake Voice Detection                |
+| Sprocket-VC                | Voice               | General           | 3,132         | 3,456                         | Fake Voice Detection                |
+| TIMIT-TTS                  | Voice               | General           | 79,120        | 79,120                        | Fake Voice Detection                |
+| FakeAVCeleb                | Video-Voice         | Face              | 500           | 19,500                        | DeepFake Detection                  |
+| DFDC                       | Video-Image-Voice   | Face              | 23,654        | 104,500                       | DeepFake Detection                  |
+| ForgeryNet                 | Video-Image         | Face              | 1,438,201     | 1,457,861                     | DeepFake Detection                  |
+| DGM4                       | Text-Image          | General           | 77,426        | 152,574                       | Media Manipulation Detection        |
+| **Ours**                   | Text-Image-Voice    | General           | 248,117       | 248,117                       | AI Text Image Voice Detection       |
+
+
 ## Requirement
 The dataset is publicly avaliable at zenodo: 
 ```url
