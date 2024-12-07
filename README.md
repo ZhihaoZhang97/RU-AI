@@ -21,7 +21,7 @@ This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Mach
 | DFDC                       | Video-Image-Voice   | Face              | 23,654        | 104,500                       | DeepFake Detection                  |
 | ForgeryNet                 | Video-Image         | Face              | 1,438,201     | 1,457,861                     | DeepFake Detection                  |
 | DGM4                       | Text-Image          | General           | 77,426        | 152,574                       | Media Manipulation Detection        |
-| **Ours**                   | **Text-Image-Voice**    | **General**           | **248,117**       | **248,117**                       | **AI Text Image Voice Detection**       |
+| **Ours**                   | **Text-Image-Voice**    | **General**           | **245,895**       | **245,895**                       | **AI Text Image Voice Detection**       |
 
 
 ## Requirement
