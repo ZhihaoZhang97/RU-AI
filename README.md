@@ -135,7 +135,6 @@ Here is the directory tree after downloading all the data:
 
 ## Object Categories
 
-![Alt text](assets/image.png)
 
 ## Model Inference
 
