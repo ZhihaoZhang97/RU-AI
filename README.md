@@ -133,6 +133,10 @@ Here is the directory tree after downloading all the data:
     └── place
 ```
 
+## Object Categories
+
+![Alt text](assets/image.png)
+
 ## Model Inference
 
 Before model inference, replace image_data_paths, audio_data_paths, text_data in the `infer_imagebind_model.py` and `infer_languagebind_model.py` files with real data / data paths
