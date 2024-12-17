@@ -4,6 +4,16 @@
 
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
+The dataset is publicly avaliable at zenodo: 
+```url
+https://zenodo.org/records/11406538
+```
+
+The noise augmented dataset is publicly avaliable at Huggingface: 
+```url
+https://huggingface.co/datasets/zzha6204/RU-AI-noise
+```
+
 ![Alt text](data-flow.png)
 
 ## Dataset Comparison
@@ -27,10 +37,6 @@ This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Mach
 
 
 ## Requirement
-The dataset is publicly avaliable at zenodo: 
-```url
-https://zenodo.org/records/11406538
-```
 
 The dataset requires at least 500GB of disk space to be fully downloaded. 
 
