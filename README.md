@@ -4,6 +4,8 @@
 
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
+![Alt text](data-flow.png)
+
 ## Dataset Comparison
 | **Dataset**                | **Modality**         | **Content**       | **Real/Human** | **Machine Generated Content** | **Task**                            |
 |----------------------------|----------------------|-------------------|---------------|-------------------------------|-------------------------------------|
