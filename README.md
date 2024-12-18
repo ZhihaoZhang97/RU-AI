@@ -32,7 +32,7 @@ https://huggingface.co/datasets/zzha6204/RU-AI-noise
 | ForgeryNet                 | Video-Image         | Face              | 1,438,201     | 1,457,861                     | DeepFake Detection                  |
 | DFDC                       | Video-Image-Voice   | Face              | 23,654        | 104,500                       | DeepFake Detection                  |
 | DGM4                       | Text-Image          | General           | 77,426        | 152,574                       | Media Manipulation Detection        |
-| **Ours**                   | **Text-Image-Voice**    | **General**           | **245,895**       | **245,895**                       | **AI Text Image Voice Detection**       |
+| **Ours**                   | **Text-Image-Voice**    | **General**           | **245,895**       | **1,229,475**                       | **AI Text Image Voice Detection**       |
 
 
 ## Requirement
