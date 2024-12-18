@@ -28,9 +28,9 @@ https://huggingface.co/datasets/zzha6204/RU-AI-noise
 | GenImage                   | Image               | General           | 1,331,167     | 1,350,000                     | AI Image Detection                  |
 | WaveFake                   | Voice               | General           | 13,600        | 104,885                       | Fake Voice Detection                |
 | Sprocket-VC                | Voice               | General           | 3,132         | 3,456                         | Fake Voice Detection                |
-| DFDC                       | Video               | Face              | 23,654        | 104,500                       | DeepFake Detection                  |
 | FakeAVCeleb                | Video-Voice         | Face              | 500           | 19,500                        | DeepFake Detection                  |
 | ForgeryNet                 | Video-Image         | Face              | 1,438,201     | 1,457,861                     | DeepFake Detection                  |
+| DFDC                       | Video-Image-Voice   | Face              | 23,654        | 104,500                       | DeepFake Detection                  |
 | DGM4                       | Text-Image          | General           | 77,426        | 152,574                       | Media Manipulation Detection        |
 | **Ours**                   | **Text-Image-Voice**    | **General**           | **245,895**       | **245,895**                       | **AI Text Image Voice Detection**       |
 
