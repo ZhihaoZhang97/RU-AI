@@ -2,10 +2,22 @@
 
 # RU-AI: A Large Multimodal Dataset for Machine-Generated Content Detection
 
-**[🎉🎉🎉Great News] Our paper has been accpected by WWW'25 Resource Track**
+<!-- Hugging Face Dataset Badge -->
+[![Hugging Face Dataset](https://img.shields.io/badge/HuggingFace-Dataset-orange?logo=huggingface&style=flat)]([https://huggingface.co/datasets/USERNAME/DATASET_NAME](https://huggingface.co/datasets/zzha6204/RU-AI-noise))
+
+<!-- Zenodo Dataset Badge -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.DOI.svg)](https://zenodo.org/records/11406538)
+
+<!-- arXiv Preprint Badge -->
+[![arXiv](https://img.shields.io/badge/arXiv-PAPER_ID-B31B1B.svg)](https://arxiv.org/abs/2406.04906)
+
+
+# 📰 News
+**[Great News] 🎉🎉🎉 Our paper has been accpected by WWW'25 Resource Track**
 
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
+# Intorduction
 The dataset is publicly avaliable at zenodo: 
 ```url
 https://zenodo.org/records/11406538
