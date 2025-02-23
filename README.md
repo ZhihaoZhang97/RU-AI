@@ -2,7 +2,7 @@
 
 # RU-AI: A Large Multimodal Dataset for Machine-Generated Content Detection
 
-**[Great News] Our paper has been accpected by WWW'25 Resource Track**
+**[🎉🎉🎉Great News] Our paper has been accpected by WWW'25 Resource Track**
 
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
