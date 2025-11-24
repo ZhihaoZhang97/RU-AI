@@ -13,9 +13,12 @@
 This is the official repo for paper: [RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection](https://arxiv.org/abs/2406.04906)
 
 # Intorduction
-The dataset is publicly avaliable at zenodo: 
+The dataset is publicly avaliable at zenodo and HuggingFace: 
 ```url
 https://zenodo.org/records/11406538
+```
+```url
+https://huggingface.co/datasets/zzha6204/RU-AI-origin
 ```
 
 The noise augmented dataset is publicly avaliable at Huggingface: 
